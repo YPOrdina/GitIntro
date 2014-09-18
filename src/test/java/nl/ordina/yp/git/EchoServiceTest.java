@@ -17,6 +17,9 @@ public class EchoServiceTest {
 
 	@Test
 	public void testEchoService() {
-		assertEquals("Good morning, John!", echoService.echo("John"));
+		assertEquals("Good morning, John!", echoService.echo("John", true));
+		assertEquals("Good afternoon, John!", echoService.echo("John", false));
 	}
+
+
 }
